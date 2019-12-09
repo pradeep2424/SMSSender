@@ -28,7 +28,6 @@ public class DashBoardActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener, Constants {
 
     private DrawerLayout drawer;
-
     private ProgressDialog progressDialog;
 
     @Override

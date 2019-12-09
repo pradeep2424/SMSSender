@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:1-78:12
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-78:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\906744c4ddcbc384c5a8d2d69414f8fa\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -38,73 +38,73 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\pjadhav\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\df65787e67fe4b4bc0635deed9695797\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a1f5477cd6fd5fad9baa3e263bec7d60\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\60b50828def4ba3859898ffb4c971c21\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-78:12
 	package
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:3:5-34
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:1-78:12
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-78:12
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:1-78:12
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-78:12
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:5:5-75
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:5:5-75
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:5:22-72
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:5:22-72
 uses-permission#android.permission.READ_CALL_LOG
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:6:5-72
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:6:5-72
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:6:22-69
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:6:22-69
 uses-permission#android.permission.ANSWER_PHONE_CALLS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:7:5-77
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:7:5-77
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:7:22-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:7:22-74
 uses-permission#android.permission.CALL_PHONE
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:8:5-69
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:8:5-69
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:8:22-66
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:8:22-66
 uses-permission#android.permission.PROCESS_INCOMING_CALLS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:9:5-81
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:9:22-78
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.SEND_SMS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:10:5-67
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:10:5-67
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:10:22-64
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:10:22-64
 uses-permission#android.permission.READ_CONTACTS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:11:5-72
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:11:5-72
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:11:22-69
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:11:22-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:12:5-67
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:12:5-67
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:12:22-64
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:12:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:13:5-79
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:13:5-79
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:13:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:14:5-68
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:14:5-68
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:14:22-65
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:14:22-65
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:15:5-81
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:15:22-78
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:15:22-78
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:16:5-77
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:16:5-77
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:16:22-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:16:22-74
 application
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:18:5-76:19
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:18:5-76:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -116,103 +116,103 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\pj
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:24:9-35
 	android:label
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:22:9-41
 	android:icon
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:21:9-43
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:21:9-43
 	android:allowBackup
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:20:9-35
 	android:theme
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:25:9-40
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:25:9-40
 	android:networkSecurityConfig
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:23:9-69
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:23:9-69
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:19:9-40
 receiver#com.smser.smssender.receivers.BootReceiver
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:26:9-33:20
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:26:9-33:20
 	android:enabled
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:28:13-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:28:13-35
 	android:exported
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:29:13-36
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:27:13-51
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:27:13-51
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:30:13-32:29
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:30:13-32:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:31:17-79
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:31:17-79
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:31:25-76
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:31:25-76
 service#com.smser.smssender.service.CallerService
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:35:9-38:39
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:35:9-38:39
 	android:enabled
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:37:13-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:38:13-36
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:36:13-50
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:36:13-50
 activity#com.smser.smssender.dialogactivity.DeciderActivity
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:40:9-42:50
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:40:9-42:50
 	android:theme
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:42:13-47
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:42:13-47
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:41:13-59
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:41:13-59
 receiver#com.smser.smssender.receivers.CallReceiver
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:44:9-47:39
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:44:9-47:39
 	android:enabled
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:46:13-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:46:13-35
 	android:exported
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:47:13-36
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:47:13-36
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:45:13-51
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:45:13-51
 activity#com.smser.smssender.SplashActivity
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:49:9-59:20
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:49:9-59:20
 	android:label
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:52:13-45
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:52:13-45
 	android:configChanges
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:51:13-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:51:13-74
 	android:theme
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:53:13-51
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:53:13-51
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:50:13-43
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:50:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:54:13-58:29
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:54:13-58:29
 action#android.intent.action.MAIN
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:55:17-69
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:55:17-69
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:55:25-66
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:55:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:57:17-77
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:57:17-77
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:57:27-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:57:27-74
 activity#com.smser.smssender.DashBoardActivity
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:61:9-64:59
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:61:9-64:59
 	android:configChanges
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:63:13-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:63:13-74
 	android:theme
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:64:13-56
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:64:13-56
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:62:13-46
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:62:13-46
 provider#androidx.core.content.FileProvider
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:66:9-74:20
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:66:9-74:20
 	android:grantUriPermissions
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:70:13-47
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:70:13-47
 	android:authorities
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:68:13-63
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:68:13-63
 	android:exported
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:69:13-37
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:69:13-37
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:67:13-62
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:67:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:71:13-73:58
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:71:13-73:58
 	android:resource
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:73:17-55
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:73:17-55
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:72:17-67
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:72:17-67
 uses-sdk
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\906744c4ddcbc384c5a8d2d69414f8fa\appcompat-1.0.2\AndroidManifest.xml:20:5-44
@@ -281,13 +281,13 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pjadhav\
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a1f5477cd6fd5fad9baa3e263bec7d60\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\60b50828def4ba3859898ffb4c971c21\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\60b50828def4ba3859898ffb4c971c21\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
