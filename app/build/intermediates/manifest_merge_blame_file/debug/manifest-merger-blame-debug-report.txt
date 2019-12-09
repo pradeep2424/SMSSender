@@ -1,0 +1,159 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.smser.smssender"
+4    android:versionCode="2"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+11-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:5:5-75
+11-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:5:22-72
+12    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+12-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:6:5-72
+12-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:6:22-69
+13    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+13-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:7:5-77
+13-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:7:22-74
+14    <uses-permission android:name="android.permission.CALL_PHONE" />
+14-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:8:5-69
+14-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:8:22-66
+15    <uses-permission android:name="android.permission.PROCESS_INCOMING_CALLS" />
+15-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:9:5-81
+15-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.SEND_SMS" />
+16-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:10:5-67
+16-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:10:22-64
+17    <uses-permission android:name="android.permission.READ_CONTACTS" />
+17-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:11:5-72
+17-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:11:22-69
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:12:5-67
+18-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:12:22-64
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:13:5-79
+19-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:13:22-76
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:14:5-68
+20-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:14:22-65
+21    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+21-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:15:5-81
+21-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:15:22-78
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+22-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:16:5-77
+22-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:16:22-74
+23
+24    <application
+24-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:18:5-76:19
+25        android:name="com.smser.smssender.definer.MainApp"
+25-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:19:9-40
+26        android:allowBackup="true"
+26-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:20:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:21:9-43
+30        android:label="@string/app_name"
+30-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:22:9-41
+31        android:networkSecurityConfig="@xml/network_security_config"
+31-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:23:9-69
+32        android:supportsRtl="true"
+32-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:24:9-35
+33        android:theme="@style/AppTheme" >
+33-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:25:9-40
+34        <receiver
+34-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:26:9-33:20
+35            android:name="com.smser.smssender.receivers.BootReceiver"
+35-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:27:13-51
+36            android:enabled="true"
+36-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:28:13-35
+37            android:exported="true" >
+37-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:29:13-36
+38            <intent-filter>
+38-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:30:13-32:29
+39                <action android:name="android.intent.action.BOOT_COMPLETED" />
+39-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:31:17-79
+39-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:31:25-76
+40            </intent-filter>
+41        </receiver>
+42
+43        <service
+43-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:35:9-38:39
+44            android:name="com.smser.smssender.service.CallerService"
+44-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:36:13-50
+45            android:enabled="true"
+45-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:37:13-35
+46            android:exported="true" />
+46-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:38:13-36
+47
+48        <activity
+48-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:40:9-42:50
+49            android:name="com.smser.smssender.dialogactivity.DeciderActivity"
+49-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:41:13-59
+50            android:theme="@style/dialogTheme" />
+50-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:42:13-47
+51
+52        <receiver
+52-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:44:9-47:39
+53            android:name="com.smser.smssender.receivers.CallReceiver"
+53-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:45:13-51
+54            android:enabled="true"
+54-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:46:13-35
+55            android:exported="true" />
+55-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:47:13-36
+56
+57        <activity
+57-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:49:9-59:20
+58            android:name="com.smser.smssender.SplashActivity"
+58-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:50:13-43
+59            android:configChanges="orientation|keyboardHidden|screenSize"
+59-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:51:13-74
+60            android:label="@string/app_name"
+60-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:52:13-45
+61            android:theme="@style/FullscreenTheme" >
+61-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:53:13-51
+62            <intent-filter>
+62-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:54:13-58:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:55:17-69
+63-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:55:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:57:17-77
+65-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:57:27-74
+66            </intent-filter>
+67        </activity>
+68        <activity
+68-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:61:9-64:59
+69            android:name="com.smser.smssender.DashBoardActivity"
+69-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:62:13-46
+70            android:configChanges="orientation|keyboardHidden|screenSize"
+70-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:63:13-74
+71            android:theme="@style/AppTheme.NoActionBar" />
+71-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:64:13-56
+72
+73        <provider
+73-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:66:9-74:20
+74            android:name="androidx.core.content.FileProvider"
+74-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:67:13-62
+75            android:authorities="com.smser.smssender.provider"
+75-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:68:13-63
+76            android:exported="false"
+76-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:69:13-37
+77            android:grantUriPermissions="true" >
+77-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:70:13-47
+78            <meta-data
+78-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:71:13-73:58
+79                android:name="android.support.FILE_PROVIDER_PATHS"
+79-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:72:17-67
+80                android:resource="@xml/provider_paths" />
+80-->D:\Android\Projects\PJ\Hotel_workspace\sms-sender-development\app\src\main\AndroidManifest.xml:73:17-55
+81        </provider>
+82    </application>
+83
+84</manifest>

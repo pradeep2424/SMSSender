@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Bizz Promo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_dash">Dashboard</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_block_contact">Block Contact User</string>
+    <string name="menu_ad_setting">Advance Setting</string>
+    <string name="menu_u_info">User Info</string>
+    <string name="menu_schedule_sms">Schedule SMS</string>
+    <string name="menu_schedule_report">Schedule Reports</string>
+    <string name="menu_sub_title">Scheduler</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="info_title">USER INFORMATION</string>
+
+    <string name="btn_signup">SIGN UP TO USE</string>
+    <string name="btn_save">Save and Start</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_key">Enter the Key</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_open_contact">Open Contact</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_auto">Save and set as Auto SMS</string>
+    <string name="btn_select">Select</string>
+    <string name="btn_select_img">Select Image</string>
+    <string name="btn_select_video">Select Video</string>
+
+    <string name="sms_hint">WE USE WHATEVER IS DEFAULT SMS SIM SET IN YOUR PHONE SETTINGS AND OR  DEFAULT WHATS APP.</string>
+    <string name="setting_hint">SMS WILL NOT SENT AGAIN, TO THE SAME PHONE NUMBER, IF YOU TURNS BELOW SWITCH.</string>
+    <string name="hint_uname">User Name</string>
+    <string name="hint_email">Email ID</string>
+    <string name="hint_mobile">Mobile No.</string>
+    <string name="hint_bname">Business Name</string>
+    <string name="hint_city">City, State</string>
+    <string name="hint_is_admin">Is Admin</string>
+    <string name="hint_admin_code">Admin code</string>
+    <string name="hint_agent_code">Enter agent code</string>
+    <string name="hint_key">Key No.</string>
+    <string name="hint_blocked">Blocked (Press long to Delete)</string>
+    <string name="hint_select">Select (Press long to Select)</string>
+    <string name="hint_sms_template">Select SMS Template</string>
+    <string name="hint_setting_sw">Using Below Settings:-</string>
+    <string name="hint_send_sms_sw">Sending SMS</string>
+    <string name="hint_sms_whats">Whats App + SMS</string>
+    <string name="hint_whats">Whats App</string>
+    <string name="hint_ask">Asking every time</string>
+    <string name="hint_web_sms">With Web SMS API</string>
+    <string name="hint_whats_sms">Send whats app SMS</string>
+    <string name="hint_whats_img">Send whats app Image</string>
+    <string name="hint_whats_video">Send whats app Video</string>
+    <string name="hint_range">Remembering the last 200 phone numbers and NOT sending SMS to them again, if SMS is already sent.</string>
+    <string name="hint_template">Here is the text to show template format</string>
+    <string name="hint_app_power">Enable App</string>
+
+    <string name="hint_template1">SMS Template First</string>
+    <string name="hint_template2">SMS Template Second</string>
+    <string name="hint_template3">SMS Template Third</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="range_100">100</string>
+    <string name="range_200">200</string>
+    <string name="range_300">300</string>
+    <string name="range_400">400</string>
+    <string name="range_500">500</string>
+
+    <string name="total_sent">Total Sent</string>
+    <string name="balance">Balance</string>
+
+    <string name="sms_count">SMS Count</string>
+    <string name="char_count">160(char)/1(count)</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="sender_id">Sender ID</string>
+
+    <string name="str_hi">Hello</string>
+    <string name="welcome">\n Today\'s Information</string>
+    <string name="validity">Product validity : </string>
+    <string name="customer_care">Customer Care : </string>
+
+    <string name="birth">Birthday</string>
+    <string name="task">Task</string>
+    <string name="sms">SMS</string>
+
+    <string name="permission_dialog">Asking you to send sms</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+
+    <string name="error_uname">Invalid user name</string>
+    <string name="error_email">Invalid email id</string>
+    <string name="error_mobile">Invalid mobile number</string>
+    <string name="error_cname">Invalid company name</string>
+    <string name="error_city">Invalid city state</string>
+    <string name="error_admin_code">Invalid admin code</string>
+    <string name="error_key">Invalid key number</string>
+    <string name="error_agent">Invalid agent code</string>
+    <string name="error_register">Error occurred\n Please try again later</string>
+    <string name="error_invalid_register">Invalid licence key</string>
+    <string name="error_internet">Please check your internet connection</string>
+    <string name="error_already">Already registered from another phone</string>
+
+    <string name="register_success">SIGN UP SUCCESSFULLY</string>
+    <string name="acc_activated">ACCOUNT ACTIVATED SUCCESSFULLY</string>
+    <string name="modify_success">MODIFIED SUCCESSFULLY</string>
+    <string name="saved">DEFAULT PATTERN SAVED SUCCESSFULLY</string>
+    <!--<string name="default_msg">Thanks for getting connected with us..,\nKiran Patil,\nMiracle Infotech,\nMaharashtra,-->
+        <!--\nmiracleinfotech@ymail.com,\n9021167662</string>-->
+    <string name="default_msg">Thanks for getting connected with us..</string>
+
+</resources>

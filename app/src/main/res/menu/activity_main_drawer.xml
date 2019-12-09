@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dash"
+            android:icon="@mipmap/ic_dashboard"
+            android:title="@string/menu_dash" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@mipmap/ic_setting"
+            android:title="@string/menu_setting" />
+        <item
+            android:id="@+id/nav_block_contact"
+            android:icon="@mipmap/ic_block"
+            android:title="@string/menu_block_contact" />
+        <item
+            android:id="@+id/nav_ad_setting"
+            android:icon="@mipmap/ic_advance_setting"
+            android:title="@string/menu_ad_setting" />
+        <item
+            android:id="@+id/nav_u_info"
+            android:icon="@mipmap/ic_info"
+            android:title="@string/menu_u_info" />
+    </group>
+
+    <item android:title="@string/menu_sub_title">
+        <menu>
+            <item
+                android:id="@+id/nav_sms"
+                android:icon="@mipmap/ic_web"
+                android:title="@string/menu_schedule_sms" />
+            <item
+                android:id="@+id/nav_report"
+                android:icon="@mipmap/ic_report"
+                android:title="@string/menu_schedule_report" />
+        </menu>
+    </item>
+
+</menu>
