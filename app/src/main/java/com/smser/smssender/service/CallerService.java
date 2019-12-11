@@ -7,6 +7,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -290,6 +291,8 @@ public class CallerService extends IntentService implements Constants {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        Log.d("########", "onStartCommand");
+
         if (intent.getAction() != null) {
             if (intent.getAction().equals(STARTFOREGROUND_ACTION)) {
                 if (timer == null) {
