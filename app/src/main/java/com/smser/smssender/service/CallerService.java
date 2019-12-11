@@ -1,5 +1,6 @@
 package com.smser.smssender.service;
 
+import android.app.AlarmManager;
 import android.app.IntentService;
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -13,6 +14,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.SystemClock;
 import android.telephony.PhoneStateListener;
 import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
@@ -362,8 +364,10 @@ public class CallerService extends IntentService implements Constants {
         return "smsService";
     }
 
+
     @Override
     public void onDestroy() {
+        Log.d("########", "onDestroy");
         unregisterReceiver(receiver);
         LocalBroadcastManager.getInstance(this).unregisterReceiver(permissionReceiver);
         super.onDestroy();
@@ -372,16 +376,25 @@ public class CallerService extends IntentService implements Constants {
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
+        Log.d("########", "onBind");
         return null;
     }
 
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
-
+        Log.d("########", "onHandleIntent");
     }
 
     @Override
     public void onTaskRemoved(Intent rootIntent) {
+        Intent restartServiceIntent = new Intent(getApplicationContext(), this.getClass());
+        restartServiceIntent.setPackage(getPackageName());
+
+        PendingIntent restartServicePendingIntent = PendingIntent.getService(getApplicationContext(), 1, restartServiceIntent, PendingIntent.FLAG_ONE_SHOT);
+        AlarmManager alarmService = (AlarmManager) getApplicationContext().getSystemService(Context.ALARM_SERVICE);
+        alarmService.set(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime() + 1000, restartServicePendingIntent);
+
+        Log.d("########", "onTaskRemoved");
         super.onTaskRemoved(rootIntent);
     }
 
