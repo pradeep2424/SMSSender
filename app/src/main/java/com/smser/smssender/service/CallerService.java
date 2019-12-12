@@ -34,6 +34,7 @@ import com.smser.smssender.definer.MainApp;
 import com.smser.smssender.dialogactivity.DeciderActivity;
 import com.smser.smssender.model.BlockData;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -200,12 +201,13 @@ public class CallerService extends IntentService implements Constants {
     private void sendSMS(String phoneNo, String msg) {
         try {
             SmsManager smsManager = SmsManager.getDefault();
-            List<String> messages = smsManager.divideMessage(msg);
+            ArrayList<String> messages = smsManager.divideMessage(msg);
 
-            for (String splitMsg : messages) {
+            smsManager.sendMultipartTextMessage(phoneNo, null, messages, null, null);
 
-                smsManager.sendTextMessage(phoneNo, null, splitMsg, null, null);
-            }
+//            for (String splitMsg : messages) {
+//                smsManager.sendTextMessage(phoneNo, null, splitMsg, null, null);
+//            }
 
             MainApp.storeValue(SMSTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(SMSTOTAL))));
             MainApp.storeValue(SMSDAILYTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(SMSDAILYTOTAL))));
@@ -400,5 +402,4 @@ public class CallerService extends IntentService implements Constants {
         Log.d("########", "onTaskRemoved");
         super.onTaskRemoved(rootIntent);
     }
-
 }

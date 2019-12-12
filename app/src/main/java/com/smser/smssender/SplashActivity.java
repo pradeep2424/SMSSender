@@ -2,7 +2,9 @@ package com.smser.smssender;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ComponentName;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -24,6 +26,12 @@ public class SplashActivity extends AppCompatActivity implements Constants {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_splash);
+
+//        if (Build.BRAND.equalsIgnoreCase("xiaomi")) {
+//            Intent intent = new Intent();
+//            intent.setComponent(new ComponentName("com.miui.securitycenter", "com.miui.permcenter.autostart.AutoStartManagementActivity"));
+//            startActivity(intent);
+//        }
 
         if (MainApp.getValue(APPPOWER).equals("")) {
             MainApp.storeValue(APPPOWER, ENABLE);
