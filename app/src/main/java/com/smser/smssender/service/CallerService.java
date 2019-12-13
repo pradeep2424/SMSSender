@@ -11,15 +11,19 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.SystemClock;
+import android.telephony.PhoneNumberUtils;
 import android.telephony.PhoneStateListener;
 import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
@@ -34,6 +38,7 @@ import com.smser.smssender.definer.MainApp;
 import com.smser.smssender.dialogactivity.DeciderActivity;
 import com.smser.smssender.model.BlockData;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
@@ -172,6 +177,49 @@ public class CallerService extends IntentService implements Constants {
         }
     }
 
+//    public void openWhatsApp(Context context, String toNumber) {
+//        try {
+//
+//            String number;
+//
+//            if (toNumber.length() > 10) {
+//                number = toNumber.substring(toNumber.length() - 10);
+//            } else {
+//                number = toNumber;
+//            }
+//
+//            MainApp.storeValue(WHATSTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSTOTAL))));
+//            MainApp.storeValue(WHATSDAILYTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSDAILYTOTAL))));
+//
+//            Intent sendIntent = new Intent("android.intent.action.SEND");
+////            File f=new File("path to the file");
+////            Uri uri = Uri.fromFile(f);
+//
+//            Uri uri =  Uri.parse( "https://homepages.cae.wisc.edu/~ece533/images/airplane.png" );
+//            String whatsAppMsg = MainApp.getValue(WHATSAPPSWITCH);
+//
+//            sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.ContactPicker"));
+//            sendIntent.setType("image");
+//            sendIntent.putExtra(Intent.EXTRA_STREAM,uri);
+//            sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators(number)+"@s.whatsapp.net");
+//            sendIntent.putExtra(Intent.EXTRA_TEXT,whatsAppMsg);
+//            startActivity(sendIntent);
+//
+////            String whatsAppMsg = "http://api.whatsapp.com/send?phone=+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
+////
+////
+////            Intent intent = new Intent(Intent.ACTION_VIEW);
+////            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+////            intent.setData(Uri.parse(whatsAppMsg));
+////            context.startActivity(intent);
+//        } catch (Exception e) {
+//            Log.e("openWhatsApp", e.toString());
+//        }
+//
+//        Log.e("openWhatsApp", "sent");
+//    }
+
+
     public void openWhatsApp(Context context, String toNumber) {
 
         try {
@@ -187,15 +235,31 @@ public class CallerService extends IntentService implements Constants {
             MainApp.storeValue(WHATSTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSTOTAL))));
             MainApp.storeValue(WHATSDAILYTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSDAILYTOTAL))));
 
+            String whatsAppMsg = "http://api.whatsapp.com/send?phone=+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
+//            String whatsAppMsg = "https://wa.me/+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
+
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH)));
+            intent.setData(Uri.parse(whatsAppMsg));
             context.startActivity(intent);
         } catch (Exception e) {
             Log.e("openWhatsApp", e.toString());
         }
 
         Log.e("openWhatsApp", "sent");
+    }
+
+
+    private boolean whatsappInstalledOrNot(String uri) {
+        PackageManager pm = getPackageManager();
+        boolean app_installed = false;
+        try {
+            pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+            app_installed = true;
+        } catch (PackageManager.NameNotFoundException e) {
+            app_installed = false;
+        }
+        return app_installed;
     }
 
     private void sendSMS(String phoneNo, String msg) {
