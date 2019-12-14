@@ -8,6 +8,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -28,8 +29,10 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
+import androidx.core.content.FileProvider;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
+import com.smser.smssender.BuildConfig;
 import com.smser.smssender.R;
 import com.smser.smssender.comman.Constants;
 import com.smser.smssender.comman.Utilities;
@@ -220,28 +223,75 @@ public class CallerService extends IntentService implements Constants {
 //    }
 
 
+//    public void openWhatsApp(Context context, String toNumber) {
+//
+//        try {
+//
+//            String number;
+//
+//            if (toNumber.length() > 10) {
+//                number = toNumber.substring(toNumber.length() - 10);
+//            } else {
+//                number = toNumber;
+//            }
+//
+//            MainApp.storeValue(WHATSTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSTOTAL))));
+//            MainApp.storeValue(WHATSDAILYTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSDAILYTOTAL))));
+//
+//            String whatsAppMsg = "http://api.whatsapp.com/send?phone=+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
+////            String whatsAppMsg = "https://wa.me/+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
+//
+//            Intent intent = new Intent(Intent.ACTION_VIEW);
+//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            intent.setData(Uri.parse(whatsAppMsg));
+//            context.startActivity(intent);
+//        } catch (Exception e) {
+//            Log.e("openWhatsApp", e.toString());
+//        }
+//
+//        Log.e("openWhatsApp", "sent");
+//    }
+
     public void openWhatsApp(Context context, String toNumber) {
 
         try {
 
-            String number;
+//            Uri imageUri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE +
+//                    "://" + getResources().getResourcePackageName(R.mipmap.ic_launcher)
+//                    + '/' + getResources().getResourceTypeName(R.mipmap.ic_launcher)
+//                    + '/' + getResources().getResourceEntryName(R.mipmap.ic_launcher));
 
-            if (toNumber.length() > 10) {
-                number = toNumber.substring(toNumber.length() - 10);
-            } else {
-                number = toNumber;
-            }
 
-            MainApp.storeValue(WHATSTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSTOTAL))));
-            MainApp.storeValue(WHATSDAILYTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSDAILYTOTAL))));
 
-            String whatsAppMsg = "http://api.whatsapp.com/send?phone=+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
-//            String whatsAppMsg = "https://wa.me/+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
+            toNumber = "918655289417"; // contains spaces.
+            toNumber = toNumber.replace("+", "").replace(" ", "");
 
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.setData(Uri.parse(whatsAppMsg));
-            context.startActivity(intent);
+            File file = new File("/sdcard/Let'sTalk/Img_1.png");
+            Uri outputFileUri = FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID + ".provider", file);
+
+            Intent sendIntent = new Intent("android.intent.action.MAIN");
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_STREAM, outputFileUri);
+            sendIntent.setPackage("com.whatsapp");
+            sendIntent.setType("image/*");
+            sendIntent.putExtra("jid", toNumber + "@s.whatsapp.net");// here 91 is country code
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "Demo test message");
+            startActivity(sendIntent);
+
+//            Uri imageUri = Uri.parse("/sdcard/DCIM/Camera/IMG_20180824_184703.jpg");
+//            Intent shareIntent = new Intent();
+//            shareIntent.setAction(Intent.ACTION_SEND);
+//            shareIntent.setPackage("com.whatsapp");
+//            shareIntent.putExtra(Intent.EXTRA_TEXT, "My sample image text");
+//            shareIntent.putExtra(Intent.EXTRA_STREAM, imageUri);
+//            shareIntent.setType("image/jpeg");
+//            shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+//            try {
+//                startActivity(shareIntent);
+//            } catch (android.content.ActivityNotFoundException ex) {
+//                Toast.makeText(context, "Kindly install whatsapp first", Toast.LENGTH_SHORT).show();
+//            }
+
         } catch (Exception e) {
             Log.e("openWhatsApp", e.toString());
         }
@@ -346,6 +396,8 @@ public class CallerService extends IntentService implements Constants {
         checkerFilter.addAction("android.intent.action.PHONE_STATE");
         checkerFilter.addAction("android.intent.action.NEW_OUTGOING_CALL");
         registerReceiver(receiver, checkerFilter);
+
+        smsMethodChecker("8655289417", getApplicationContext(), INCOMMING);
 
         permissionReceiver = new PermissionChecker();
         IntentFilter permissionFilter = new IntentFilter();

@@ -118,6 +118,28 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
+            android:id="@+id/ll_uploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_templateImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"/>
+
+            <Button
+                android:id="@+id/btn_uploadPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Picture" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -153,14 +175,14 @@
                 android:layout_weight="2"
                 android:hint="@string/user">
 
-            <EditText
-                android:id="@+id/user_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:inputType="text"
-                android:maxLines="1"
-                android:singleLine="true" />
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -170,14 +192,14 @@
                 android:layout_weight="2"
                 android:hint="@string/password">
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:singleLine="true" />
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -196,14 +218,14 @@
                 android:layout_weight="2"
                 android:hint="@string/sender_id">
 
-            <EditText
-                android:id="@+id/sender_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:inputType="text"
-                android:maxLines="1"
-                android:singleLine="true" />
+                <EditText
+                    android:id="@+id/sender_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

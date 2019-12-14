@@ -9,6 +9,7 @@ public interface Constants {
     String SECONDSWITCH = "second";
     String THIRDSWITCH = "third";
     String WHATSAPPSWITCH = "whatsApp";
+    String  WHATSAPPS_TEMPLATE_IMAGE = "whatsAppTemplateImage";
     String USERID = "userId";
     String PASSWORD = "password";
     String SENDERID = "senderId";

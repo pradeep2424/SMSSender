@@ -1,246 +1,295 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-79:12
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-94:12
+MERGED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\906744c4ddcbc384c5a8d2d69414f8fa\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\6ad3a0421bede08f062516d2d02b0d2d\appcompat-1.1.0-alpha01\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.antonKozyriatskyi:CircularProgressIndicator:1.3.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4d2b1290ec6958dd953a64325af006f5\jetified-CircularProgressIndicator-1.3.0\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\61015dda0f41d63be36764ccaeacf3e4\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b8cc9d7540d5868cd087dd5d54518a1e\jetified-glide-4.9.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\0a80afa9ca98134d5ce7f6232c71e0a7\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\ca3ed72cfdc57fc3a102e462c0327875\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\03329b05586f0caae0d184468b2f23e5\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\e553813983e46838e58f4d5c941751e0\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b64f80842d3d302e8b4275c4ce2e897c\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d3630d68b3426116d0d3136c83cf345f\recyclerview-1.1.0-alpha01\AndroidManifest.xml:17:1-22:12
+MERGED from [io.fotoapparat:fotoapparat:2.7.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a802131b7a896a994de088b86ab24f43\fotoapparat-2.7.0\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b72a7379f5aa5df036759e5e73c50cc5\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.2.0-rc01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d3c5ccbbb58e6fafeda92c05bb68143b\core-ktx-1.2.0-rc01\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b432947d09f38291043b1b7278108b44\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\9a025d71df64fa109f25cf7bf02bc960\fragment-1.1.0-alpha02\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\7e3b4c2f83e256517b094f844ce7d668\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0-alpha02] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b890a9adaa8cdd016cfecb6513c1e777\activity-1.0.0-alpha02\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2bd63e96b82e4254cd6653dc8da764d4\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\863b030a4ef24c5e89f12cd832de155e\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\3b95216347b91b0d0d6d33ef33ac3197\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2dd52bdeda96a748df5d7e83cece6c38\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8069b605758f8fcc2cf1372e87a50a23\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2fe66d8bec3c90b690bace4d7b7b6157\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\6bb482d4edfb8945df7454050b78aa75\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\45ed680b1ca2374827549d4e2c9e1a90\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a0e6ae58238c1d1ff8cccab3415a6d19\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b432947d09f38291043b1b7278108b44\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2bd63e96b82e4254cd6653dc8da764d4\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\03329b05586f0caae0d184468b2f23e5\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0-rc01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\7aba7ff4d17754d5bebb26232f2a86cb\core-1.2.0-rc01\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4c78b2edac61c6bb78ef1e30f1d85403\jetified-gifdecoder-4.9.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a0e6ae58238c1d1ff8cccab3415a6d19\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\df65787e67fe4b4bc0635deed9695797\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a1f5477cd6fd5fad9baa3e263bec7d60\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\60b50828def4ba3859898ffb4c971c21\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-79:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-94:12
 	package
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:3:5-34
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:4:5-34
 		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-79:12
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-94:12
 		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-79:12
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:1-94:12
 		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:5:5-75
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:6:5-75
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:5:22-72
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:6:22-72
 uses-permission#android.permission.READ_CALL_LOG
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:6:5-72
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:7:5-72
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:6:22-69
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:7:22-69
 uses-permission#android.permission.ANSWER_PHONE_CALLS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:7:5-77
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:8:5-77
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:7:22-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:8:22-74
 uses-permission#android.permission.CALL_PHONE
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:8:5-69
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:9:5-69
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:8:22-66
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:9:22-66
 uses-permission#android.permission.PROCESS_INCOMING_CALLS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:9:5-81
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:9:22-78
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:10:22-78
 uses-permission#android.permission.SEND_SMS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:10:5-67
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:10:22-64
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:11:22-64
 uses-permission#android.permission.READ_CONTACTS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:11:5-72
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:12:5-72
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:11:22-69
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:12:22-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:12:5-67
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:13:5-67
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:12:22-64
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:13:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:13:5-79
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:14:5-79
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:14:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:14:5-68
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:15:5-68
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:14:22-65
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:15:22-65
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:15:5-81
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:15:22-78
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:16:22-78
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:16:5-77
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:17:5-77
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:16:22-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:17:22-74
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:18:5-80
+MERGED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:12:5-80
+MERGED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:18:22-77
 application
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:18:5-77:19
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:21:5-92:19
+MERGED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:16:5-23:19
+MERGED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:16:5-23:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\45ed680b1ca2374827549d4e2c9e1a90\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\45ed680b1ca2374827549d4e2c9e1a90\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b8cc9d7540d5868cd087dd5d54518a1e\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b8cc9d7540d5868cd087dd5d54518a1e\jetified-glide-4.9.0\AndroidManifest.xml:10:5-20
+MERGED from [io.fotoapparat:fotoapparat:2.7.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a802131b7a896a994de088b86ab24f43\fotoapparat-2.7.0\AndroidManifest.xml:11:5-20
+MERGED from [io.fotoapparat:fotoapparat:2.7.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a802131b7a896a994de088b86ab24f43\fotoapparat-2.7.0\AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.2.0-rc01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\7aba7ff4d17754d5bebb26232f2a86cb\core-1.2.0-rc01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0-rc01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\7aba7ff4d17754d5bebb26232f2a86cb\core-1.2.0-rc01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4c78b2edac61c6bb78ef1e30f1d85403\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4c78b2edac61c6bb78ef1e30f1d85403\jetified-gifdecoder-4.9.0\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.2.0-rc01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\7aba7ff4d17754d5bebb26232f2a86cb\core-1.2.0-rc01\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:24:9-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:27:9-35
 	android:label
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:25:9-41
+	android:largeHeap
+		ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:17:9-33
 	android:icon
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:21:9-43
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:24:9-43
 	android:allowBackup
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:23:9-35
 	android:theme
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:25:9-40
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:28:9-40
 	android:networkSecurityConfig
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:23:9-69
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:26:9-69
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:22:9-40
 receiver#com.smser.smssender.receivers.BootReceiver
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:27:9-34:20
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:30:9-37:20
 	android:enabled
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:29:13-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:32:13-35
 	android:exported
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:33:13-36
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:28:13-51
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:31:13-51
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:31:13-33:29
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:34:13-36:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:32:17-79
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:35:17-79
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:32:25-76
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:35:25-76
 service#com.smser.smssender.service.CallerService
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:36:9-39:39
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:39:9-42:39
 	android:enabled
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:38:13-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:41:13-35
 	android:exported
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:39:13-36
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:42:13-36
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:37:13-50
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:40:13-50
 activity#com.smser.smssender.dialogactivity.DeciderActivity
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:41:9-43:50
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:44:9-46:50
 	android:theme
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:43:13-47
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:46:13-47
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:42:13-59
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:45:13-59
 receiver#com.smser.smssender.receivers.CallReceiver
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:45:9-48:39
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:48:9-51:39
 	android:enabled
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:47:13-35
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:50:13-35
 	android:exported
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:48:13-36
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:51:13-36
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:46:13-51
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:49:13-51
 activity#com.smser.smssender.SplashActivity
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:50:9-60:20
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:53:9-63:20
 	android:label
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:53:13-45
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:56:13-45
 	android:configChanges
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:52:13-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:55:13-74
 	android:theme
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:54:13-51
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:57:13-51
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:51:13-43
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:54:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:55:13-59:29
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:58:13-62:29
 action#android.intent.action.MAIN
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:56:17-69
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:59:17-69
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:56:25-66
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:59:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:58:17-77
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:61:17-77
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:58:27-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:61:27-74
 activity#com.smser.smssender.DashBoardActivity
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:62:9-65:59
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:65:9-68:59
 	android:configChanges
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:64:13-74
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:67:13-74
 	android:theme
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:65:13-56
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:68:13-56
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:63:13-46
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:66:13-46
 provider#androidx.core.content.FileProvider
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:67:9-75:20
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:80:9-90:20
 	android:grantUriPermissions
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:71:13-47
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:84:13-47
 	android:authorities
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:69:13-63
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:82:13-63
 	android:exported
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:70:13-37
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:83:13-37
+	tools:replace
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:85:13-48
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:68:13-62
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:81:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:72:13-74:58
+ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:86:13-89:58
 	android:resource
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:74:17-55
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:89:17-55
+	tools:replace
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:88:17-49
 	android:name
-		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:73:17-67
+		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml:87:17-67
 uses-sdk
 INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+MERGED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2946ca0ea6c89dab7d7d9fbc18e54292\material-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\906744c4ddcbc384c5a8d2d69414f8fa\appcompat-1.0.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\906744c4ddcbc384c5a8d2d69414f8fa\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\6ad3a0421bede08f062516d2d02b0d2d\appcompat-1.1.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\6ad3a0421bede08f062516d2d02b0d2d\appcompat-1.1.0-alpha01\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\508ac768b50158a079142e4dc4915061\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\47fc3950c814b04977735368112c37af\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.antonKozyriatskyi:CircularProgressIndicator:1.3.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4d2b1290ec6958dd953a64325af006f5\jetified-CircularProgressIndicator-1.3.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.antonKozyriatskyi:CircularProgressIndicator:1.3.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4d2b1290ec6958dd953a64325af006f5\jetified-CircularProgressIndicator-1.3.0\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\61015dda0f41d63be36764ccaeacf3e4\fragment-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\61015dda0f41d63be36764ccaeacf3e4\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b8cc9d7540d5868cd087dd5d54518a1e\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b8cc9d7540d5868cd087dd5d54518a1e\jetified-glide-4.9.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\0a80afa9ca98134d5ce7f6232c71e0a7\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\0a80afa9ca98134d5ce7f6232c71e0a7\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\ca3ed72cfdc57fc3a102e462c0327875\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\ca3ed72cfdc57fc3a102e462c0327875\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8d97f43c730baedb50b76131bea8976c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\65eb695d8f60c47c48deea4b4bc97d22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\03329b05586f0caae0d184468b2f23e5\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\03329b05586f0caae0d184468b2f23e5\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\e553813983e46838e58f4d5c941751e0\transition-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\e553813983e46838e58f4d5c941751e0\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b64f80842d3d302e8b4275c4ce2e897c\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b64f80842d3d302e8b4275c4ce2e897c\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d3630d68b3426116d0d3136c83cf345f\recyclerview-1.1.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d3630d68b3426116d0d3136c83cf345f\recyclerview-1.1.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [io.fotoapparat:fotoapparat:2.7.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a802131b7a896a994de088b86ab24f43\fotoapparat-2.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [io.fotoapparat:fotoapparat:2.7.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a802131b7a896a994de088b86ab24f43\fotoapparat-2.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b72a7379f5aa5df036759e5e73c50cc5\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b72a7379f5aa5df036759e5e73c50cc5\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.2.0-rc01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d3c5ccbbb58e6fafeda92c05bb68143b\core-ktx-1.2.0-rc01\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0-rc01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d3c5ccbbb58e6fafeda92c05bb68143b\core-ktx-1.2.0-rc01\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b432947d09f38291043b1b7278108b44\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b432947d09f38291043b1b7278108b44\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\9a025d71df64fa109f25cf7bf02bc960\fragment-1.1.0-alpha02\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\9a025d71df64fa109f25cf7bf02bc960\fragment-1.1.0-alpha02\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\7e3b4c2f83e256517b094f844ce7d668\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\7e3b4c2f83e256517b094f844ce7d668\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha02] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b890a9adaa8cdd016cfecb6513c1e777\activity-1.0.0-alpha02\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha02] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b890a9adaa8cdd016cfecb6513c1e777\activity-1.0.0-alpha02\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2bd63e96b82e4254cd6653dc8da764d4\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2bd63e96b82e4254cd6653dc8da764d4\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\863b030a4ef24c5e89f12cd832de155e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\863b030a4ef24c5e89f12cd832de155e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\3b95216347b91b0d0d6d33ef33ac3197\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
@@ -253,28 +302,22 @@ MERGED from [androidx.customview:customview:1.0.0] C:\Users\pjadhav\.gradle\cach
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2fe66d8bec3c90b690bace4d7b7b6157\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\6bb482d4edfb8945df7454050b78aa75\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\6bb482d4edfb8945df7454050b78aa75\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\c0a39027978b83a483a047f5c31d0c4e\core-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\45ed680b1ca2374827549d4e2c9e1a90\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\45ed680b1ca2374827549d4e2c9e1a90\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f64c8351ef0c9a7a800019d28185706c\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a0e6ae58238c1d1ff8cccab3415a6d19\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a0e6ae58238c1d1ff8cccab3415a6d19\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b432947d09f38291043b1b7278108b44\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\b432947d09f38291043b1b7278108b44\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\8cf450d11667f9427b289f08c2115f5c\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\d31a9dbc3f8404c541e987748c42963b\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2bd63e96b82e4254cd6653dc8da764d4\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\2bd63e96b82e4254cd6653dc8da764d4\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\699bc310780b1730bce8fe271ffeca8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4848834a580ecbbeaa84b2c68ac1663a\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\01d333055a983e736e0a5fac950ffa8f\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\03329b05586f0caae0d184468b2f23e5\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\03329b05586f0caae0d184468b2f23e5\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0-rc01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\7aba7ff4d17754d5bebb26232f2a86cb\core-1.2.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0-rc01] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\7aba7ff4d17754d5bebb26232f2a86cb\core-1.2.0-rc01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\f3128affa7000c088d176285d7f5681f\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4c78b2edac61c6bb78ef1e30f1d85403\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\4c78b2edac61c6bb78ef1e30f1d85403\jetified-gifdecoder-4.9.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a0e6ae58238c1d1ff8cccab3415a6d19\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a0e6ae58238c1d1ff8cccab3415a6d19\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\df65787e67fe4b4bc0635deed9695797\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\df65787e67fe4b4bc0635deed9695797\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a1f5477cd6fd5fad9baa3e263bec7d60\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
@@ -291,3 +334,25 @@ INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\Andr
 		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 		ADDED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\Projects\PJ\Hotel_workspace\SMSSender\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:11:5-65
+MERGED from [io.fotoapparat:fotoapparat:2.7.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a802131b7a896a994de088b86ab24f43\fotoapparat-2.7.0\AndroidManifest.xml:9:5-65
+MERGED from [io.fotoapparat:fotoapparat:2.7.0] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\a802131b7a896a994de088b86ab24f43\fotoapparat-2.7.0\AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:11:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:13:22-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:14:22-78
+activity#com.fxn.pix.Pix
+ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:19:9-22:52
+	android:screenOrientation
+		ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:22:13-49
+	android:noHistory
+		ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [com.fxn769:pix:1.4.4] C:\Users\pjadhav\.gradle\caches\transforms-2\files-2.1\37553dac1c2c6c1c57a01ea4ff36d898\pix-1.4.4\AndroidManifest.xml:20:13-43

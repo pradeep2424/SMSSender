@@ -1,5 +1,6 @@
 package com.smser.smssender;
 
+import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
 import android.database.Cursor;
@@ -19,10 +20,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.fxn.pix.Options;
+import com.fxn.pix.Pix;
+import com.fxn.utility.ImageQuality;
 import com.smser.smssender.comman.Constants;
 import com.smser.smssender.comman.Utilities;
 import com.smser.smssender.dbmanager.dbidentifier.MasterCaller;
@@ -40,8 +46,14 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
     private Button tempSave/*, selectImg, selectVideo*/;
     private EditText senderId, userId, password;
 
+    private LinearLayout llUploadLayout;
+    private ImageView ivTemplateImage;
+    private Button btnUploadPicture;
+
     private int PICK_IMAGE_MULTIPLE = 1;
     private int PICK_VIDEO_MULTIPLE = 2;
+
+    private int PICK_WHATSAPP_TEMPLATE_IMAGE = 100;
 
     public SmsTemplateFragment() {
         // Required empty public constructor
@@ -74,6 +86,10 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
         senderId = view.findViewById(R.id.sender_id);
         tempSave = view.findViewById(R.id.btn_save_sms);
 
+        llUploadLayout = view.findViewById(R.id.ll_uploadImage);
+        btnUploadPicture = view.findViewById(R.id.btn_uploadPicture);
+        ivTemplateImage = view.findViewById(R.id.iv_templateImage);
+
 //        imgName = view.findViewById(R.id.img_name);
 //        videoName = view.findViewById(R.id.video_name);
 //        selectImg = view.findViewById(R.id.btn_select_img);
@@ -88,6 +104,7 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
         tempWhatsApp.setOnClickListener(this);
 
         tempSave.setOnClickListener(this);
+        btnUploadPicture.setOnClickListener(this);
 //        selectImg.setOnClickListener(this);
 //        selectVideo.setOnClickListener(this);
 
@@ -252,8 +269,12 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
                     tempThird.setChecked(false);
                     tempFirst.setChecked(false);
                     msgShower(4);
+
+                    llUploadLayout.setVisibility(View.VISIBLE);
+
                 } else {
                     tempWhatsApp.setChecked(true);
+                    llUploadLayout.setVisibility(View.VISIBLE);
                 }
                 break;
             /*case R.id.btn_select_img:
@@ -271,6 +292,24 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
                 intent1.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent1, "Select Video"), PICK_VIDEO_MULTIPLE);
                 break;*/
+
+            case R.id.btn_uploadPicture:
+
+                Options options = Options.init()
+                        .setCount(1)                                                         //Number of images to restict selection count
+                        .setFrontfacing(false)                                                //Front Facing camera on start
+                        .setImageQuality(ImageQuality.HIGH)                                  //Image Quality
+//                        .setPreSelectedUrls(returnValue)                                     //Pre selected Image Urls
+                        .setScreenOrientation(Options.SCREEN_ORIENTATION_PORTRAIT)           //Orientaion
+                        .setRequestCode(PICK_WHATSAPP_TEMPLATE_IMAGE)
+                        .setPath("/pix/images");                                             //Custom Path For Image Storage
+
+                Pix.start(getActivity(), options);
+
+//                Pix.start(context, Options.init().setRequestCode(100));
+
+                break;
+
             case R.id.btn_save_sms:
 
                 if (tempFirst.isChecked()) {
@@ -350,91 +389,126 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        try {
-
-            ArrayList<Uri> mArrayUri = new ArrayList<>();
-
-            if ((requestCode == PICK_IMAGE_MULTIPLE || requestCode == PICK_VIDEO_MULTIPLE) && resultCode == RESULT_OK && null != data) {
-                // Get the Image from data
-
-                String[] filePathColumn = {MediaStore.Images.Media.DATA};
-                ArrayList<String> imagesEncodedList = new ArrayList<>();
-                String imageEncoded;
-                if (data.getData() != null) {
-
-                    Uri mImageUri = data.getData();
-                    // Get the cursor
-                    Cursor cursor = getActivity().getContentResolver().query(mImageUri, filePathColumn, null, null, null);
-                    // Move to first row
-                    cursor.moveToFirst();
-
-                    int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-                    imageEncoded = cursor.getString(columnIndex);
-                    cursor.close();
-
-                    mArrayUri.add(mImageUri);
-
-                } else {
-
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-
-                        if (data.getClipData() != null) {
-
-                            ClipData mClipData = data.getClipData();
-
-                            for (int i = 0; i < mClipData.getItemCount(); i++) {
-
-                                ClipData.Item item = mClipData.getItemAt(i);
-                                Uri uri = item.getUri();
-                                mArrayUri.add(uri);
-                                // Get the cursor
-                                Cursor cursor = getActivity().getContentResolver().query(uri, filePathColumn, null, null, null);
-                                // Move to first row
-                                cursor.moveToFirst();
-
-                                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-                                imageEncoded = cursor.getString(columnIndex);
-                                imagesEncodedList.add(imageEncoded);
-                                cursor.close();
-                            }
-
-                            Log.v("LOG_TAG", "Selected Images" + mArrayUri.size());
-                        }
-                    }
-                }
-
-                if (requestCode == PICK_IMAGE_MULTIPLE) {
-                    if (mArrayUri.size() > 0) {
-                        MainApp.storeValue(IMGPATH, String.valueOf(mArrayUri.get(0)));
-//                        imgName.setText(IMGTEXT);
-                    }
-                } else if (requestCode == PICK_VIDEO_MULTIPLE) {
-                    if (mArrayUri.size() > 0) {
-                        MainApp.storeValue(VIDEOPATH, String.valueOf(mArrayUri.get(0)));
-//                        videoName.setText(VIDEOTEXT);
-                    }
-                }
-            } else {
-                Toast.makeText(getActivity(), "You haven't picked Image", Toast.LENGTH_LONG).show();
-            }
-        } catch (Exception e) {
-            Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_LONG).show();
-        }
-
-//        if (resultCode == RESULT_OK && data != null) {
-//            if (requestCode == PICK_IMAGE_MULTIPLE) {
-//                Uri selectedImageUri = data.getData();
-//                MainApp.storeValue("imgPath", getImagePath(selectedImageUri));
-//                Log.e("imgPath", MainApp.getValue("imgPath"));
-//            } else if (requestCode == PICK_VIDEO_MULTIPLE) {
-//                Uri selectedImageUri = data.getData();
-//                MainApp.storeValue("videoPath", getVideoPath(selectedImageUri));
-//                Log.e("videoPath", MainApp.getValue("videoPath"));
-//            }
-//        }
-
         super.onActivityResult(requestCode, resultCode, data);
+
+        switch (requestCode) {
+            case (100): {
+                if (resultCode == Activity.RESULT_OK) {
+                    ArrayList<String> returnValue = data.getStringArrayListExtra(Pix.IMAGE_RESULTS);
+                    String url = "";
+
+                    if (returnValue != null) {
+                        url = returnValue.get(0);
+                        MainApp.storeValue(WHATSAPPS_TEMPLATE_IMAGE, url);
+
+                    } else {
+                        Toast.makeText(getActivity(), "Image not found", Toast.LENGTH_LONG).show();
+                    }
+                }
+            }
+            break;
+        }
     }
+
+//    @Override
+//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        try {
+//
+//            ArrayList<Uri> mArrayUri = new ArrayList<>();
+//
+//            if ((requestCode == PICK_IMAGE_MULTIPLE || requestCode == PICK_VIDEO_MULTIPLE) && resultCode == RESULT_OK && null != data) {
+//                // Get the Image from data
+//
+//                String[] filePathColumn = {MediaStore.Images.Media.DATA};
+//                ArrayList<String> imagesEncodedList = new ArrayList<>();
+//                String imageEncoded;
+//                if (data.getData() != null) {
+//
+//                    Uri mImageUri = data.getData();
+//                    // Get the cursor
+//                    Cursor cursor = getActivity().getContentResolver().query(mImageUri, filePathColumn, null, null, null);
+//                    // Move to first row
+//                    cursor.moveToFirst();
+//
+//                    int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+//                    imageEncoded = cursor.getString(columnIndex);
+//                    cursor.close();
+//
+//                    mArrayUri.add(mImageUri);
+//
+//                } else {
+//
+//                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+//
+//                        if (data.getClipData() != null) {
+//
+//                            ClipData mClipData = data.getClipData();
+//
+//                            for (int i = 0; i < mClipData.getItemCount(); i++) {
+//
+//                                ClipData.Item item = mClipData.getItemAt(i);
+//                                Uri uri = item.getUri();
+//                                mArrayUri.add(uri);
+//                                // Get the cursor
+//                                Cursor cursor = getActivity().getContentResolver().query(uri, filePathColumn, null, null, null);
+//                                // Move to first row
+//                                cursor.moveToFirst();
+//
+//                                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+//                                imageEncoded = cursor.getString(columnIndex);
+//                                imagesEncodedList.add(imageEncoded);
+//                                cursor.close();
+//                            }
+//
+//                            Log.v("LOG_TAG", "Selected Images" + mArrayUri.size());
+//                        }
+//                    }
+//                }
+//
+//                if (requestCode == PICK_IMAGE_MULTIPLE) {
+//                    if (mArrayUri.size() > 0) {
+//                        MainApp.storeValue(IMGPATH, String.valueOf(mArrayUri.get(0)));
+////                        imgName.setText(IMGTEXT);
+//                    }
+//                } else if (requestCode == PICK_VIDEO_MULTIPLE) {
+//                    if (mArrayUri.size() > 0) {
+//                        MainApp.storeValue(VIDEOPATH, String.valueOf(mArrayUri.get(0)));
+////                        videoName.setText(VIDEOTEXT);
+//                    }
+//                }
+//            } else if (resultCode == RESULT_OK && requestCode == PICK_WHATSAPP_TEMPLATE_IMAGE) {
+//                ArrayList<String> returnValue = data.getStringArrayListExtra(Pix.IMAGE_RESULTS);
+//                String url = "";
+//
+//                if (returnValue != null) {
+//                    url = returnValue.get(0);
+//                    MainApp.storeValue(WHATSAPPS_TEMPLATE_IMAGE, url);
+//
+//                } else {
+//                    Toast.makeText(getActivity(), "Image not found", Toast.LENGTH_LONG).show();
+//                }
+//
+//            } else {
+//                Toast.makeText(getActivity(), "You haven't picked Image", Toast.LENGTH_LONG).show();
+//            }
+//        } catch (Exception e) {
+//            Toast.makeText(getActivity(), "Something went wrong", Toast.LENGTH_LONG).show();
+//        }
+//
+////        if (resultCode == RESULT_OK && data != null) {
+////            if (requestCode == PICK_IMAGE_MULTIPLE) {
+////                Uri selectedImageUri = data.getData();
+////                MainApp.storeValue("imgPath", getImagePath(selectedImageUri));
+////                Log.e("imgPath", MainApp.getValue("imgPath"));
+////            } else if (requestCode == PICK_VIDEO_MULTIPLE) {
+////                Uri selectedImageUri = data.getData();
+////                MainApp.storeValue("videoPath", getVideoPath(selectedImageUri));
+////                Log.e("videoPath", MainApp.getValue("videoPath"));
+////            }
+////        }
+//
+//        super.onActivityResult(requestCode, resultCode, data);
+//    }
 
 //    private String getImagePath(Uri uri) {
 //        // just some safety built in
