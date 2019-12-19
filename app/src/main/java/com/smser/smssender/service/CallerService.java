@@ -14,11 +14,13 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.SystemClock;
+import android.provider.ContactsContract;
 import android.telephony.PhoneNumberUtils;
 import android.telephony.PhoneStateListener;
 import android.telephony.SmsManager;
@@ -254,13 +256,55 @@ public class CallerService extends IntentService implements Constants {
 //    }
 
     public void openWhatsApp(Context context, String toNumber) {
+        sendWhatsAppMessageWithImage(context, toNumber);
+//        sendImageOnWhatsApp(context, toNumber);
 
+//        if (isContactExists(context, toNumber)) {
+//            sendWhatsAppMessageWithImage(context, toNumber);
+//        } else {
+//            sendOnlyWhatsAppTextMessage(context, toNumber);
+//        }
+
+
+//        try {
+//
+//
+////            toNumber = "919594345208"; // contains spaces.
+//            toNumber = toNumber.replace("+", "").replace(" ", "");
+//            String whatsAppMsg = MainApp.getValue(WHATSAPPSWITCH);
+//
+//            Uri outputFileUri = null;
+//            String whatsAppTemplateImg = MainApp.getValue(WHATSAPPS_TEMPLATE_IMAGE);
+//            if (whatsAppTemplateImg != null && whatsAppTemplateImg.trim().length() > 0) {
+//                File file = new File(whatsAppTemplateImg);
+//                outputFileUri = FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID + ".provider", file);
+//            }
+//
+//            boolean installed = whatsAppInstalledOrNot("com.whatsapp");
+//            if (installed) {
+//                Intent sendIntent = new Intent("android.intent.action.MAIN");
+//                sendIntent.setAction(Intent.ACTION_SEND);
+//                sendIntent.putExtra(Intent.EXTRA_STREAM, outputFileUri);
+//                sendIntent.setPackage("com.whatsapp");
+//                sendIntent.setType("image/*");
+//                sendIntent.putExtra("jid", toNumber + "@s.whatsapp.net");// here 91 is country code
+//                sendIntent.putExtra(Intent.EXTRA_TEXT, whatsAppMsg);
+//                sendIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                startActivity(sendIntent);
+//            } else {
+//                Toast.makeText(context, "WhatsApp is not currently installed on your phone", Toast.LENGTH_SHORT).show();
+//            }
+//
+//
+//        } catch (Exception e) {
+//            Log.e("openWhatsApp", e.toString());
+//        }
+
+        Log.e("openWhatsApp", "sent");
+    }
+
+    private void sendWhatsAppMessageWithImage(Context context, String toNumber) {
         try {
-
-//            Uri imageUri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE +
-//                    "://" + getResources().getResourcePackageName(R.mipmap.ic_launcher)
-//                    + '/' + getResources().getResourceTypeName(R.mipmap.ic_launcher)
-//                    + '/' + getResources().getResourceEntryName(R.mipmap.ic_launcher));
 
 
 //            toNumber = "919594345208"; // contains spaces.
@@ -276,17 +320,6 @@ public class CallerService extends IntentService implements Constants {
 
             boolean installed = whatsAppInstalledOrNot("com.whatsapp");
             if (installed) {
-//                Intent sendIntent = new Intent("android.intent.action.SEND");
-////                File f = new File("path to the file");
-////                Uri uri = Uri.fromFile(f);
-//                sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.ContactPicker"));
-//                sendIntent.setType("image");
-//                sendIntent.putExtra(Intent.EXTRA_STREAM, outputFileUri);
-//                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators(toNumber)+"@s.whatsapp.net");
-//                sendIntent.putExtra(Intent.EXTRA_TEXT,"sample text you want to send along with the image");
-//                sendIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                startActivity(sendIntent);
-
                 Intent sendIntent = new Intent("android.intent.action.MAIN");
                 sendIntent.setAction(Intent.ACTION_SEND);
                 sendIntent.putExtra(Intent.EXTRA_STREAM, outputFileUri);
@@ -299,25 +332,110 @@ public class CallerService extends IntentService implements Constants {
             } else {
                 Toast.makeText(context, "WhatsApp is not currently installed on your phone", Toast.LENGTH_SHORT).show();
             }
-//            Uri imageUri = Uri.parse("/sdcard/DCIM/Camera/IMG_20180824_184703.jpg");
-//            Intent shareIntent = new Intent();
-//            shareIntent.setAction(Intent.ACTION_SEND);
-//            shareIntent.setPackage("com.whatsapp");
-//            shareIntent.putExtra(Intent.EXTRA_TEXT, "My sample image text");
-//            shareIntent.putExtra(Intent.EXTRA_STREAM, imageUri);
-//            shareIntent.setType("image/jpeg");
-//            shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-//            try {
-//                startActivity(shareIntent);
-//            } catch (android.content.ActivityNotFoundException ex) {
-//                Toast.makeText(context, "Kindly install whatsapp first", Toast.LENGTH_SHORT).show();
-//            }
+
+        } catch (Exception e) {
+            Log.e("openWhatsApp", e.toString());
+        }
+    }
+
+    public void sendOnlyWhatsAppTextMessage(Context context, String toNumber) {
+
+        try {
+
+            String number;
+
+            if (toNumber.length() > 10) {
+                number = toNumber.substring(toNumber.length() - 10);
+            } else {
+                number = toNumber;
+            }
+
+            MainApp.storeValue(WHATSTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSTOTAL))));
+            MainApp.storeValue(WHATSDAILYTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSDAILYTOTAL))));
+
+            String whatsAppMsg = "http://api.whatsapp.com/send?phone=+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
+//            String whatsAppMsg = "https://wa.me/+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
+
+            boolean installed = whatsAppInstalledOrNot("com.whatsapp");
+            if (installed) {
+
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.setData(Uri.parse(whatsAppMsg));
+                context.startActivity(intent);
+
+            } else {
+                Toast.makeText(context, "WhatsApp is not currently installed on your phone", Toast.LENGTH_SHORT).show();
+            }
 
         } catch (Exception e) {
             Log.e("openWhatsApp", e.toString());
         }
 
         Log.e("openWhatsApp", "sent");
+    }
+
+    private void sendTextOnWhatsApp(Context context, String toNumber) {
+        try {
+
+
+//            toNumber = "919594345208"; // contains spaces.
+            toNumber = toNumber.replace("+", "").replace(" ", "");
+            String whatsAppMsg = MainApp.getValue(WHATSAPPSWITCH);
+
+            Uri outputFileUri = null;
+            String whatsAppTemplateImg = MainApp.getValue(WHATSAPPS_TEMPLATE_IMAGE);
+            if (whatsAppTemplateImg != null && whatsAppTemplateImg.trim().length() > 0) {
+                File file = new File(whatsAppTemplateImg);
+                outputFileUri = FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID + ".provider", file);
+            }
+
+            boolean installed = whatsAppInstalledOrNot("com.whatsapp");
+            if (installed) {
+
+                Intent sendIntent = new Intent("android.intent.action.MAIN");
+                sendIntent.setAction(Intent.ACTION_SEND);
+//                sendIntent.putExtra(Intent.EXTRA_STREAM, outputFileUri);
+                sendIntent.setPackage("com.whatsapp");
+                sendIntent.setType("text/plain");
+                sendIntent.putExtra("jid", toNumber + "@s.whatsapp.net");// here 91 is country code
+                sendIntent.putExtra(Intent.EXTRA_TEXT, whatsAppMsg);
+                sendIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                try {
+                    context.startActivity(sendIntent);
+
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            } else {
+                Toast.makeText(context, "WhatsApp is not currently installed on your phone", Toast.LENGTH_SHORT).show();
+            }
+
+
+        } catch (Exception e) {
+            Log.e("openWhatsApp", e.toString());
+        }
+
+        Log.e("openWhatsApp", "sent");
+    }
+
+    public boolean isContactExists(Context context, String number) {
+/// number is the phone number
+        Uri lookupUri = Uri.withAppendedPath(
+                ContactsContract.PhoneLookup.CONTENT_FILTER_URI,
+                Uri.encode(number));
+        String[] mPhoneNumberProjection = {ContactsContract.PhoneLookup._ID, ContactsContract.PhoneLookup.NUMBER, ContactsContract.PhoneLookup.DISPLAY_NAME};
+        Cursor cur = context.getContentResolver().query(lookupUri, mPhoneNumberProjection, null, null, null);
+        try {
+            if (cur.moveToFirst()) {
+                return true;
+            }
+        } finally {
+            if (cur != null)
+                cur.close();
+        }
+        return false;
     }
 
 
@@ -422,6 +540,7 @@ public class CallerService extends IntentService implements Constants {
 
 //        smsMethodChecker("8655289417", getApplicationContext(), INCOMMING);
 //        openWhatsApp(getApplicationContext(), "918655289417");
+//        sendImageOnWhatsApp(getApplicationContext(), "919029732905");
 
         permissionReceiver = new PermissionChecker();
         IntentFilter permissionFilter = new IntentFilter();
