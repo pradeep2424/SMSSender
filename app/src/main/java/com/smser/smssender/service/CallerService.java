@@ -263,7 +263,7 @@ public class CallerService extends IntentService implements Constants {
 //                    + '/' + getResources().getResourceEntryName(R.mipmap.ic_launcher));
 
 
-            toNumber = "918655289417"; // contains spaces.
+//            toNumber = "919594345208"; // contains spaces.
             toNumber = toNumber.replace("+", "").replace(" ", "");
             String whatsAppMsg = MainApp.getValue(WHATSAPPSWITCH);
 
@@ -276,6 +276,17 @@ public class CallerService extends IntentService implements Constants {
 
             boolean installed = whatsAppInstalledOrNot("com.whatsapp");
             if (installed) {
+//                Intent sendIntent = new Intent("android.intent.action.SEND");
+////                File f = new File("path to the file");
+////                Uri uri = Uri.fromFile(f);
+//                sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.ContactPicker"));
+//                sendIntent.setType("image");
+//                sendIntent.putExtra(Intent.EXTRA_STREAM, outputFileUri);
+//                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators(toNumber)+"@s.whatsapp.net");
+//                sendIntent.putExtra(Intent.EXTRA_TEXT,"sample text you want to send along with the image");
+//                sendIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                startActivity(sendIntent);
+
                 Intent sendIntent = new Intent("android.intent.action.MAIN");
                 sendIntent.setAction(Intent.ACTION_SEND);
                 sendIntent.putExtra(Intent.EXTRA_STREAM, outputFileUri);
@@ -368,18 +379,20 @@ public class CallerService extends IntentService implements Constants {
             smsMsg = getSmsToSend();
         }
 
-        switch (MainApp.getValue(SMSMETHOD)) {
-            case ONLYSMS:
-                sendSMS(sendingNumber, smsMsg);
-                break;
-            case SMSWHATSAPP:
-                sendSMS(sendingNumber, smsMsg);
-                openWhatsApp(context, sendingNumber);
-                break;
-            case WHATSAPP:
-                openWhatsApp(context, sendingNumber);
-                break;
-        }
+        openWhatsApp(context, sendingNumber);
+
+//        switch (MainApp.getValue(SMSMETHOD)) {
+//            case ONLYSMS:
+//                sendSMS(sendingNumber, smsMsg);
+//                break;
+//            case SMSWHATSAPP:
+//                sendSMS(sendingNumber, smsMsg);
+//                openWhatsApp(context, sendingNumber);
+//                break;
+//            case WHATSAPP:
+//                openWhatsApp(context, sendingNumber);
+//                break;
+//        }
 
         WebSmsCaller.callWebSms(number, smsMsg);
     }
@@ -407,7 +420,8 @@ public class CallerService extends IntentService implements Constants {
         checkerFilter.addAction("android.intent.action.NEW_OUTGOING_CALL");
         registerReceiver(receiver, checkerFilter);
 
-        smsMethodChecker("8655289417", getApplicationContext(), INCOMMING);
+//        smsMethodChecker("8655289417", getApplicationContext(), INCOMMING);
+//        openWhatsApp(getApplicationContext(), "918655289417");
 
         permissionReceiver = new PermissionChecker();
         IntentFilter permissionFilter = new IntentFilter();
