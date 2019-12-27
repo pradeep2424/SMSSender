@@ -113,4 +113,7 @@
         <!--\nmiracleinfotech@ymail.com,\n9021167662</string>-->
     <string name="default_msg">Thanks for getting connected with us..</string>
 
+    <string name="gallery">Gallery</string>
+    <string name="document">Document</string>
+
 </resources>

@@ -3,7 +3,7 @@
     package="com.smser.smssender.test" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="17"
         android:targetSdkVersion="28" />
 
     <instrumentation

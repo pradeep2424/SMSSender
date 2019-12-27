@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.ThumbnailUtils;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,16 +31,17 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//import com.fxn.pix.Options;
-//import com.fxn.pix.Pix;
-//import com.fxn.utility.ImageQuality;
 import com.esafirm.imagepicker.features.ImagePicker;
 import com.esafirm.imagepicker.features.ReturnMode;
 import com.esafirm.imagepicker.model.Image;
+import com.kyleduo.blurpopupwindow.library.BlurPopupWindow;
 import com.smser.smssender.comman.Constants;
 import com.smser.smssender.comman.Utilities;
 import com.smser.smssender.dbmanager.dbidentifier.MasterCaller;
 import com.smser.smssender.definer.MainApp;
+import com.vincent.filepicker.Constant;
+import com.vincent.filepicker.activity.NormalFilePickActivity;
+import com.vincent.filepicker.filter.entity.NormalFile;
 
 import org.apache.commons.io.FileUtils;
 
@@ -66,12 +69,17 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
     private ImageView ivTemplateImage;
     private Button btnUploadPicture;
 
-    String whatsAppTemplateImg;
+    BlurPopupWindow dialogUploadMediaOption;
+
+    String whatsAppTemplateDocument;
 
     private int PICK_IMAGE_MULTIPLE = 1;
     private int PICK_VIDEO_MULTIPLE = 2;
 
     private int PICK_WHATSAPP_TEMPLATE_IMAGE = 100;
+
+    ArrayList<String> photoPaths;
+    ArrayList<String> docPaths;
 
     public SmsTemplateFragment() {
         // Required empty public constructor
@@ -216,8 +224,8 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
         password.setText(MainApp.getValue(PASSWORD));
         senderId.setText(MainApp.getValue(SENDERID));
 
-        whatsAppTemplateImg = MainApp.getValue(WHATSAPPS_TEMPLATE_IMAGE);
-        if (whatsAppTemplateImg != null && whatsAppTemplateImg.trim().length() > 0) {
+        whatsAppTemplateDocument = MainApp.getValue(WHATSAPPS_TEMPLATE_DOCUMENT);
+        if (whatsAppTemplateDocument != null && whatsAppTemplateDocument.trim().length() > 0) {
             setWhatsAppTemplateImage();
         }
 
@@ -246,6 +254,67 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
                 break;
         }
     }
+
+    private void showUploadOptionPopup() {
+        dialogUploadMediaOption = new BlurPopupWindow.Builder(getActivity())
+                .setContentView(R.layout.layout_upload_media_window)
+                .bindClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+//                        Intent galleryIntent = new Intent(Intent.ACTION_PICK,
+//                                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//                        startActivityForResult(galleryIntent, REQUEST_CODE_LOGO_FROM_PHOTOS);
+
+                        pickImageFromGallery();
+                        dialogUploadMediaOption.dismiss();
+                    }
+                }, R.id.ll_addLogoPhoto)
+                .bindClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        pickDocument();
+                        dialogUploadMediaOption.dismiss();
+                    }
+                }, R.id.ll_addLogoURL)
+                .setGravity(Gravity.CENTER)
+                .setScaleRatio(0.2f)
+                .setBlurRadius(10)
+                .setTintColor(0x30000000)
+//                .setTintColor(Color.parseColor("#80000000"))
+                .build();
+
+        dialogUploadMediaOption.show();
+    }
+
+    private void pickDocument() {
+        Intent intent4 = new Intent(getActivity(), NormalFilePickActivity.class);
+        intent4.putExtra(Constant.MAX_NUMBER, 1);
+        intent4.putExtra(NormalFilePickActivity.SUFFIX, new String[]{"xlsx", "xls", "doc", "docx", "ppt", "pptx", "pdf"});
+        startActivityForResult(intent4, Constant.REQUEST_CODE_PICK_FILE);
+    }
+
+    private void pickImageFromGallery() {
+        ImagePicker.create(this)
+                .returnMode(ReturnMode.ALL) // set whether pick and / or camera action should return immediate result or not.
+                .folderMode(true) // folder mode (false by default)
+//                        .toolbarFolderTitle("Folder") // folder selection title
+                .toolbarImageTitle("Tap to select") // image selection title
+//                        .toolbarArrowColor(Color.BLACK) // Toolbar 'up' arrow color
+                .includeVideo(true) // Show video on image picker
+                .single() // single mode
+//                        .multi() // multi mode (default mode)
+//                        .limit(10) // max images can be selected (99 by default)
+                .showCamera(true) // show camera or not (true by default)
+//                        .imageDirectory("Camera") // directory name for captured image  ("Camera" folder by default)
+//                        .origin(images) // original selected images, used in multi mode
+//                        .exclude(images) // exclude anything that in image.getPath()
+//                        .excludeFiles(files) // same as exclude but using ArrayList<File>
+//                        .theme(R.style.CustomImagePickerTheme) // must inherit ef_BaseTheme. please refer to sample
+                .enableLog(false) // disabling log
+                .start(); // start image picker activity with request code
+    }
+
 
     @Override
     public void onClick(View v) {
@@ -317,37 +386,26 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
 
             case R.id.btn_uploadPicture:
 
-                ImagePicker.create(this)
-                        .returnMode(ReturnMode.ALL) // set whether pick and / or camera action should return immediate result or not.
-                        .folderMode(true) // folder mode (false by default)
-//                        .toolbarFolderTitle("Folder") // folder selection title
-                        .toolbarImageTitle("Tap to select") // image selection title
-//                        .toolbarArrowColor(Color.BLACK) // Toolbar 'up' arrow color
-//                        .includeVideo(true) // Show video on image picker
-                        .single() // single mode
-//                        .multi() // multi mode (default mode)
-//                        .limit(10) // max images can be selected (99 by default)
-                        .showCamera(true) // show camera or not (true by default)
-//                        .imageDirectory("Camera") // directory name for captured image  ("Camera" folder by default)
-//                        .origin(images) // original selected images, used in multi mode
-//                        .exclude(images) // exclude anything that in image.getPath()
-//                        .excludeFiles(files) // same as exclude but using ArrayList<File>
-//                        .theme(R.style.CustomImagePickerTheme) // must inherit ef_BaseTheme. please refer to sample
-                        .enableLog(false) // disabling log
-                        .start(); // start image picker activity with request code
+                showUploadOptionPopup();
 
-//                Options options = Options.init()
-//                        .setCount(1)                                                         //Number of images to restict selection count
-//                        .setFrontfacing(false)                                                //Front Facing camera on start
-//                        .setImageQuality(ImageQuality.HIGH)                                  //Image Quality
-////                        .setPreSelectedUrls(returnValue)                                     //Pre selected Image Urls
-//                        .setScreenOrientation(Options.SCREEN_ORIENTATION_PORTRAIT)           //Orientaion
-//                        .setRequestCode(PICK_WHATSAPP_TEMPLATE_IMAGE)
-//                        .setPath("/pix/images");                                             //Custom Path For Image Storage
-//
-//                Pix.start(getActivity(), options);
-//
-////                Pix.start(context, Options.init().setRequestCode(100));
+//                ImagePicker.create(this)
+//                        .returnMode(ReturnMode.ALL) // set whether pick and / or camera action should return immediate result or not.
+//                        .folderMode(true) // folder mode (false by default)
+////                        .toolbarFolderTitle("Folder") // folder selection title
+//                        .toolbarImageTitle("Tap to select") // image selection title
+////                        .toolbarArrowColor(Color.BLACK) // Toolbar 'up' arrow color
+//                        .includeVideo(true) // Show video on image picker
+//                        .single() // single mode
+////                        .multi() // multi mode (default mode)
+////                        .limit(10) // max images can be selected (99 by default)
+//                        .showCamera(true) // show camera or not (true by default)
+////                        .imageDirectory("Camera") // directory name for captured image  ("Camera" folder by default)
+////                        .origin(images) // original selected images, used in multi mode
+////                        .exclude(images) // exclude anything that in image.getPath()
+////                        .excludeFiles(files) // same as exclude but using ArrayList<File>
+////                        .theme(R.style.CustomImagePickerTheme) // must inherit ef_BaseTheme. please refer to sample
+//                        .enableLog(false) // disabling log
+//                        .start(); // start image picker activity with request code
 
                 break;
 
@@ -372,10 +430,9 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
                     MainApp.storeValue(WHATSAPPSWITCH, templateText.getText().toString());
                     MainApp.storeValue(LASTOPTION, WHATSAPPSWITCH);
 
-                    if (whatsAppTemplateImg != null && whatsAppTemplateImg.trim().length() > 0) {
-                        MainApp.storeValue(WHATSAPPS_TEMPLATE_IMAGE, whatsAppTemplateImg);
+                    if (whatsAppTemplateDocument != null && whatsAppTemplateDocument.trim().length() > 0) {
+                        MainApp.storeValue(WHATSAPPS_TEMPLATE_DOCUMENT, whatsAppTemplateDocument);
                     }
-
                 }
 
                 Utilities.showToast(getActivity(), getString(R.string.saved));
@@ -386,52 +443,52 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
         }
     }
 
-    private void openWhatsApp() {
-
-        try {
-            MainApp.storeValue(WHATSTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSTOTAL))));
-            MainApp.storeValue(WHATSDAILYTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSDAILYTOTAL))));
-
+//    private void openWhatsApp() {
+//
+//        try {
+//            MainApp.storeValue(WHATSTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSTOTAL))));
+//            MainApp.storeValue(WHATSDAILYTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSDAILYTOTAL))));
+//
+////            Intent intent = new Intent(Intent.ACTION_VIEW);
+////            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+////            intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+918879937831&text=" + msg));
+////            intent.putExtra(Intent.EXTRA_STREAM, Uri.parse(MainApp.getValue("imgPath")));
+////            context.startActivity(intent);
+//
+////            Log.e("openWhatsApp", MainApp.getValue("imgPath"));
+////            Intent share = new Intent(Intent.ACTION_SEND);
+////            share.setType("image/jpeg");
+////            share.putExtra(Intent.EXTRA_STREAM, Uri.parse(MainApp.getValue("imgPath")));
+////            share.setPackage("com.whatsapp");//package name of the app
+////            startActivity(Intent.createChooser(share, "Share Image"));
+//
+////            Intent sendIntent = new Intent();
+//////            sendIntent.setAction(Intent.ACTION_SEND);
+////            sendIntent.setPackage("com.whatsapp");
+////            sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse(MainApp.getValue(IMGPATH)));
+//////            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+//////            sendIntent.setType("text/plain");
+////            sendIntent.setType("*/*");
+////            startActivity(sendIntent);
+//////            startActivity(Intent.createChooser(sendIntent, "Share image using"));
+//
 //            Intent intent = new Intent(Intent.ACTION_VIEW);
 //            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//            intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+918879937831&text=" + msg));
-//            intent.putExtra(Intent.EXTRA_STREAM, Uri.parse(MainApp.getValue("imgPath")));
-//            context.startActivity(intent);
-
-//            Log.e("openWhatsApp", MainApp.getValue("imgPath"));
-//            Intent share = new Intent(Intent.ACTION_SEND);
-//            share.setType("image/jpeg");
-//            share.putExtra(Intent.EXTRA_STREAM, Uri.parse(MainApp.getValue("imgPath")));
-//            share.setPackage("com.whatsapp");//package name of the app
-//            startActivity(Intent.createChooser(share, "Share Image"));
-
-//            Intent sendIntent = new Intent();
-////            sendIntent.setAction(Intent.ACTION_SEND);
-//            sendIntent.setPackage("com.whatsapp");
-//            sendIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse(MainApp.getValue(IMGPATH)));
-////            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
-////            sendIntent.setType("text/plain");
-//            sendIntent.setType("*/*");
-//            startActivity(sendIntent);
-////            startActivity(Intent.createChooser(sendIntent, "Share image using"));
-
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+918879937831&image=" + MainApp.getValue(IMGPATH)));
-            startActivity(intent);
-
-//            try {
-//                startActivity(whatsappIntent);
-//            } catch (android.content.ActivityNotFoundException ex) {
-//                Toast.makeText(getActivity(), "Whatsapp have not been installed.", Toast.LENGTH_SHORT).show();
-//            }
-
-        } catch (Exception e) {
-            Log.e("openWhatsApp", e.toString());
-        }
-
-        Log.e("openWhatsApp", "sent");
-    }
+//            intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+918879937831&image=" + MainApp.getValue(IMGPATH)));
+//            startActivity(intent);
+//
+////            try {
+////                startActivity(whatsappIntent);
+////            } catch (android.content.ActivityNotFoundException ex) {
+////                Toast.makeText(getActivity(), "Whatsapp have not been installed.", Toast.LENGTH_SHORT).show();
+////            }
+//
+//        } catch (Exception e) {
+//            Log.e("openWhatsApp", e.toString());
+//        }
+//
+//        Log.e("openWhatsApp", "sent");
+//    }
 
     private String createDirectoryAndSaveFile(String srcPath, String fileName) {
         String dstPath = null;
@@ -459,8 +516,12 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
         return dstPath;
     }
 
-    private void setWhatsAppTemplateImage() {
-        Bitmap bmImg = BitmapFactory.decodeFile(whatsAppTemplateImg);
+    public Bitmap createVideoThumbNail(String path){
+        return ThumbnailUtils.createVideoThumbnail(path,MediaStore.Video.Thumbnails.MICRO_KIND);
+    }
+
+    private void setWhatsAppTemplateImagePreivew() {
+        Bitmap bmImg = BitmapFactory.decodeFile(whatsAppTemplateDocument);
         ivTemplateImage.setImageBitmap(bmImg);
     }
 
@@ -475,30 +536,43 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
             Image image = ImagePicker.getFirstImageOrNull(data);
             String imagePath = image.getPath();
             String imageName = image.getName();
-            whatsAppTemplateImg = createDirectoryAndSaveFile(imagePath, imageName);
+            whatsAppTemplateDocument = createDirectoryAndSaveFile(imagePath, imageName);
 
-            if (whatsAppTemplateImg != null && whatsAppTemplateImg.trim().length() > 0) {
+            if (whatsAppTemplateDocument != null && whatsAppTemplateDocument.trim().length() > 0) {
                 setWhatsAppTemplateImage();
+            }
+        } else if (requestCode == Constant.REQUEST_CODE_PICK_FILE) {
+            if (resultCode == RESULT_OK) {
+                ArrayList<NormalFile> list = data.getParcelableArrayListExtra(Constant.RESULT_PICK_FILE);
+
+                if (list != null && list.size() > 0) {
+                    NormalFile normalFile = list.get(0);
+                    String filePath = normalFile.getPath();
+                    String fileName = filePath.substring(filePath.lastIndexOf("/") + 1);
+                    whatsAppTemplateDocument = createDirectoryAndSaveFile(filePath, fileName);
+                }
+
             }
         }
 
-//        switch (requestCode) {
-//            case (100): {
-//                if (resultCode == Activity.RESULT_OK) {
-//                    ArrayList<String> returnValue = data.getStringArrayListExtra(Pix.IMAGE_RESULTS);
-//                    String url = "";
-//
-//                    if (returnValue != null) {
-//                        url = returnValue.get(0);
-//                        MainApp.storeValue(WHATSAPPS_TEMPLATE_IMAGE, url);
-//
-//                    } else {
-//                        Toast.makeText(getActivity(), "Image not found", Toast.LENGTH_LONG).show();
-//                    }
+//        switch (requestCode)
+//        {
+//            case FilePickerConst.REQUEST_CODE_PHOTO:
+//                if(resultCode== Activity.RESULT_OK && data!=null)
+//                {
+//                    photoPaths = new ArrayList<>();
+//                    photoPaths.addAll(data.getStringArrayListExtra(FilePickerConst.KEY_SELECTED_MEDIA));
 //                }
-//            }
-//            break;
+//                break;
+//            case FilePickerConst.REQUEST_CODE_DOC:
+//                if(resultCode== Activity.RESULT_OK && data!=null)
+//                {
+//                    docPaths = new ArrayList<>();
+//                    docPaths.addAll(data.getStringArrayListExtra(FilePickerConst.KEY_SELECTED_DOCS));
+//                }
+//                break;
 //        }
+
     }
 
 //    @Override
