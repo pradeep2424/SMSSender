@@ -2,6 +2,7 @@ package com.smser.smssender;
 
 import android.app.Activity;
 import android.content.ClipData;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -23,6 +24,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -51,6 +53,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URLConnection;
 import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
@@ -226,7 +229,7 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
 
         whatsAppTemplateDocument = MainApp.getValue(WHATSAPPS_TEMPLATE_DOCUMENT);
         if (whatsAppTemplateDocument != null && whatsAppTemplateDocument.trim().length() > 0) {
-            setWhatsAppTemplateImage();
+            setWhatsAppTemplateImagePreview();
         }
 
         /*if (!MainApp.getValue(IMGPATH).equals("")) {
@@ -327,6 +330,8 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
                     tempThird.setChecked(false);
                     tempWhatsApp.setChecked(false);
                     msgShower(1);
+
+                    llUploadLayout.setVisibility(View.GONE);
                 } else {
                     tempFirst.setChecked(true);
                 }
@@ -338,6 +343,8 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
                     tempThird.setChecked(false);
                     tempWhatsApp.setChecked(false);
                     msgShower(2);
+
+                    llUploadLayout.setVisibility(View.GONE);
                 } else {
                     tempSecond.setChecked(true);
                 }
@@ -349,6 +356,8 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
                     tempFirst.setChecked(false);
                     tempWhatsApp.setChecked(false);
                     msgShower(3);
+
+                    llUploadLayout.setVisibility(View.GONE);
                 } else {
                     tempThird.setChecked(true);
                 }
@@ -516,13 +525,43 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
         return dstPath;
     }
 
-    public Bitmap createVideoThumbNail(String path){
-        return ThumbnailUtils.createVideoThumbnail(path,MediaStore.Video.Thumbnails.MICRO_KIND);
+    private void setBitmapToImageView(Bitmap bitmap) {
+        ivTemplateImage.setImageBitmap(bitmap);
     }
 
-    private void setWhatsAppTemplateImagePreivew() {
-        Bitmap bmImg = BitmapFactory.decodeFile(whatsAppTemplateDocument);
-        ivTemplateImage.setImageBitmap(bmImg);
+    public Bitmap createVideoThumbNail(String path) {
+        return ThumbnailUtils.createVideoThumbnail(path, MediaStore.Video.Thumbnails.MICRO_KIND);
+    }
+
+    public String getMimeType(String url) {
+        String type = null;
+        String extension = MimeTypeMap.getFileExtensionFromUrl(url);
+        if (extension != null) {
+            type = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension.toLowerCase());
+        }
+        if (type == null) {
+            type = "image/*"; // fallback type. You might set it to */*
+        }
+        return type;
+    }
+
+    private void setWhatsAppTemplateImagePreview() {
+        String mimeType = getMimeType(whatsAppTemplateDocument);
+
+        if (mimeType != null) {
+            if (mimeType.startsWith("image")) {
+                Bitmap bmImg = BitmapFactory.decodeFile(whatsAppTemplateDocument);
+                setBitmapToImageView(bmImg);
+
+            } else if (mimeType.startsWith("video")) {
+                Bitmap bmImg = createVideoThumbNail(whatsAppTemplateDocument);
+                setBitmapToImageView(bmImg);
+
+            } else {
+                ivTemplateImage.setImageResource(R.drawable.ic_document_preivew);
+            }
+        }
+
     }
 
     @Override
@@ -539,7 +578,7 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
             whatsAppTemplateDocument = createDirectoryAndSaveFile(imagePath, imageName);
 
             if (whatsAppTemplateDocument != null && whatsAppTemplateDocument.trim().length() > 0) {
-                setWhatsAppTemplateImage();
+                setWhatsAppTemplateImagePreview();
             }
         } else if (requestCode == Constant.REQUEST_CODE_PICK_FILE) {
             if (resultCode == RESULT_OK) {
@@ -550,6 +589,10 @@ public class SmsTemplateFragment extends Fragment implements View.OnClickListene
                     String filePath = normalFile.getPath();
                     String fileName = filePath.substring(filePath.lastIndexOf("/") + 1);
                     whatsAppTemplateDocument = createDirectoryAndSaveFile(filePath, fileName);
+
+                    if (whatsAppTemplateDocument != null && whatsAppTemplateDocument.trim().length() > 0) {
+                        setWhatsAppTemplateImagePreview();
+                    }
                 }
 
             }

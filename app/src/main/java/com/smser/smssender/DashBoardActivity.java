@@ -111,7 +111,8 @@ public class DashBoardActivity extends AppCompatActivity implements
         }
 
         if (MainApp.getValue(PERMISSION).equals("")) {
-            MainApp.storeValue(PERMISSION, ENABLE);
+            MainApp.storeValue(PERMISSION, DISABLE);
+//            MainApp.storeValue(PERMISSION, ENABLE);
         }
 
         if (MainApp.getValue(WEBSMS).equals("")) {

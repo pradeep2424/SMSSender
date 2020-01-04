@@ -178,7 +178,6 @@ public class CallerService extends IntentService implements Constants {
             } else {
                 smsMethodChecker(number, context, callType);
             }
-
         }
     }
 
@@ -260,7 +259,9 @@ public class CallerService extends IntentService implements Constants {
             toNumber = toNumber.replace("+", "").replace(" ", "");
 
             boolean isContactExist = contactExists(context, toNumber);
-            if (isContactExist) {
+            String whatsAppTemplateDocument = MainApp.getValue(WHATSAPPS_TEMPLATE_DOCUMENT);
+            if (isContactExist &&
+                    (whatsAppTemplateDocument != null & whatsAppTemplateDocument.length() > 0)) {
                 sendMessageAndImageOnWhatsApp(context, toNumber);
             } else {
                 sendMessageOnlyOnWhatsApp(context, toNumber);
@@ -324,6 +325,8 @@ public class CallerService extends IntentService implements Constants {
 
         boolean installed = whatsAppInstalledOrNot("com.whatsapp");
         if (installed) {
+            incrementWhatsAppMessageCounter();
+
             Intent sendIntent = new Intent("android.intent.action.SEND");
             sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.ContactPicker"));
 //            sendIntent.setType("image/*");
@@ -355,6 +358,8 @@ public class CallerService extends IntentService implements Constants {
         if (installed) {
 //            String whatsAppMsg = "http://api.whatsapp.com/send?phone=+91" + number + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
 
+            incrementWhatsAppMessageCounter();
+
             String whatsAppMsg = "http://api.whatsapp.com/send?phone=" + toNumber + "&text=" + MainApp.getValue(WHATSAPPSWITCH);
 
             Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -367,6 +372,10 @@ public class CallerService extends IntentService implements Constants {
         }
     }
 
+    private void incrementWhatsAppMessageCounter() {
+        MainApp.storeValue(WHATSTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSTOTAL))));
+        MainApp.storeValue(WHATSDAILYTOTAL, "" + (1 + Utilities.numberConverter(MainApp.getValue(WHATSDAILYTOTAL))));
+    }
 
     private boolean whatsAppInstalledOrNot(String uri) {
         PackageManager pm = getPackageManager();
